@@ -2,16 +2,21 @@ stages:
   - build
   - generate
   - test
+variables:
+  PLAYWRIGHT_BROWSERS_PATH: $CI_PROJECT_DIR/browsers
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
+    - browsers/  # 缓存浏览器安装目录
   policy: pull-push
 
 build-dependencies:
   stage: build
-  script: npm ci
+  script:
+    - npm ci
+    - npx playwright install  # 安装所有必需的浏览器
 
 generate-config:
   stage: generate
