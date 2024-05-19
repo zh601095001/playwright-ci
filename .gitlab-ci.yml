@@ -9,6 +9,8 @@ generate-config:
   artifacts:
     paths:
       - dynamic-config.yml
+  tags:
+    - windows
 
 trigger-child:
   stage: test
