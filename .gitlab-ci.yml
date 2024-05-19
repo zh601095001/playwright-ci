@@ -1,7 +1,6 @@
 stages:
   - build
   - generate
-  - sub-job
   - install
   - test
 variables:
@@ -32,7 +31,7 @@ generate-config:
     - windows
 
 trigger-child:
-  stage: sub-job
+  stage: install
   trigger:
     include: dynamic-config.yml
 
