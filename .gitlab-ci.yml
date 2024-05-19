@@ -16,3 +16,4 @@ trigger-child:
   stage: test
   trigger:
     include: dynamic-config.yml
+
