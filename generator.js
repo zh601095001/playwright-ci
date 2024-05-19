@@ -31,12 +31,10 @@ const ciConfig = {
     variables: {
         PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/browsers"
     },
-    "build-dependencies": {
+    "install-browser": {
         stage: "install",
         script: ["npx playwright install"]
-    }
-
-
+    },
 };
 
 testFiles.forEach((filePath) => {
