@@ -42,7 +42,7 @@ testFiles.forEach((filePath) => {
     const reportPath = `./reports/report_${uniqueToken}.json`;  // 定义 JSON 报告文件的路径
     ciConfig[`playwright_test_${uniqueToken}`] = {
         stage: 'test',
-        script: [`npx playwright test ${filePath} --reporter=json  --output=${reportPath}`],
+        script: [`npx playwright test ${filePath} --output=${reportPath}`],
         tags: ['windows'] // 修改为你的 GitLab Runner 标签
     };
 });

@@ -2,6 +2,8 @@ stages:
   - build
   - generate
   - sub-job
+  - install
+  - test
 variables:
   PLAYWRIGHT_BROWSERS_PATH: $CI_PROJECT_DIR/browsers
 
