@@ -13,67 +13,69 @@ install-browser:
   stage: install
   script:
     - npx playwright install
-playwright_test_4fbcce102fd8e8853f70fb81a5b50f28:
+  tags:
+    - windows
+playwright_test_5e465037bca1e2f11ad6ddc1730b1cbd:
   stage: test
   script:
     - >-
       npx playwright test tests/test1.test.ts
-      --output=./reports/report_4fbcce102fd8e8853f70fb81a5b50f28.json
+      --output=./reports/report_5e465037bca1e2f11ad6ddc1730b1cbd.json
   tags:
     - windows
-playwright_test_a4ccd4a563e0a7d69c87165f689df0d6:
+playwright_test_87ccb6ac49e07d5526f904514531f486:
   stage: test
   script:
     - >-
       npx playwright test tests/test2.test.ts
-      --output=./reports/report_a4ccd4a563e0a7d69c87165f689df0d6.json
+      --output=./reports/report_87ccb6ac49e07d5526f904514531f486.json
   tags:
     - windows
-playwright_test_b391019884a3d9117a40995b6ab0e1df:
+playwright_test_ffc2792b98c3363a297fe2d90fca04c7:
   stage: test
   script:
     - >-
       npx playwright test tests/test3.test.ts
-      --output=./reports/report_b391019884a3d9117a40995b6ab0e1df.json
+      --output=./reports/report_ffc2792b98c3363a297fe2d90fca04c7.json
   tags:
     - windows
-playwright_test_daaa57b58eab3c369f31bf9cf08eacbf:
+playwright_test_2c324808d46b34ef45ffe96dd0126f82:
   stage: test
   script:
     - >-
       npx playwright test tests/test4.test.ts
-      --output=./reports/report_daaa57b58eab3c369f31bf9cf08eacbf.json
+      --output=./reports/report_2c324808d46b34ef45ffe96dd0126f82.json
   tags:
     - windows
-playwright_test_9df8843fe8505907b335e4c0c47616c1:
+playwright_test_da0566a24ff0cbebccd677f4baeca5da:
   stage: test
   script:
     - >-
       npx playwright test tests/test5.test.ts
-      --output=./reports/report_9df8843fe8505907b335e4c0c47616c1.json
+      --output=./reports/report_da0566a24ff0cbebccd677f4baeca5da.json
   tags:
     - windows
-playwright_test_cd9e362aad6008978be55a933bdd1321:
+playwright_test_c95876143e123a333ba93099664d4696:
   stage: test
   script:
     - >-
       npx playwright test tests/test6.test.ts
-      --output=./reports/report_cd9e362aad6008978be55a933bdd1321.json
+      --output=./reports/report_c95876143e123a333ba93099664d4696.json
   tags:
     - windows
-playwright_test_b008e8078de93d37f371f7ff4e8570c7:
+playwright_test_2c67e638ef4801986eff2758b36d6448:
   stage: test
   script:
     - >-
       npx playwright test tests/test7.test.ts
-      --output=./reports/report_b008e8078de93d37f371f7ff4e8570c7.json
+      --output=./reports/report_2c67e638ef4801986eff2758b36d6448.json
   tags:
     - windows
-playwright_test_98f7404eb2004f5722a918dc857c22dd:
+playwright_test_707c45bf8d2d89b99fe5d10d85ff177b:
   stage: test
   script:
     - >-
       npx playwright test tests/test8.test.ts
-      --output=./reports/report_98f7404eb2004f5722a918dc857c22dd.json
+      --output=./reports/report_707c45bf8d2d89b99fe5d10d85ff177b.json
   tags:
     - windows
