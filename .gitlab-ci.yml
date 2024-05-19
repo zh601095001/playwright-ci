@@ -1,6 +1,16 @@
 stages:
+  - build
   - generate
   - test
+
+build-dependencies:
+  stage: build
+  script: npm ci
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+    policy: pull-push
 
 generate-config:
   stage: generate
@@ -9,6 +19,7 @@ generate-config:
   artifacts:
     paths:
       - dynamic-config.yml
+    expire_in: 1 hour  # 根据需要调整过期时间
   tags:
     - windows
 
