@@ -7,7 +7,7 @@ function readDirectory(directory, extension) {
     let testFiles = [];
     const files = fs.readdirSync(directory, {withFileTypes: true});
     files.forEach(file => {
-        const fullPath = path.join(directory, file.name);
+        const fullPath = path.posix.join(directory, file.name);
         if (file.isDirectory()) {
             testFiles = testFiles.concat(readDirectory(fullPath, extension));
         } else {
