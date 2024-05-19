@@ -3,14 +3,15 @@ stages:
   - generate
   - test
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+  policy: pull-push
+
 build-dependencies:
   stage: build
   script: npm ci
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-    policy: pull-push
 
 generate-config:
   stage: generate
