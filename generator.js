@@ -25,8 +25,11 @@ const ciConfig = {
     stages: ['test'],
     cache: {
         key: "${CI_COMMIT_REF_SLUG}",
-        paths: ["node_modules/"],
+        paths: ["node_modules/","browsers/"],
         policy: "pull-push"
+    },
+    variables:{
+        PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/browsers"
     }
 };
 
