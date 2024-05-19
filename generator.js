@@ -33,7 +33,8 @@ const ciConfig = {
     },
     "install-browser": {
         stage: "install",
-        script: ["npx playwright install"]
+        script: ["npx playwright install"],
+        tags: ["windows"]
     },
 };
 
