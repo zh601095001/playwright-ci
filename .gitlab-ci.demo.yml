@@ -1,0 +1,16 @@
+stages:
+  - generate
+  - test
+
+generate-config:
+  stage: generate
+  script:
+    - node generator.js
+  artifacts:
+    paths:
+      - dynamic-config.yml
+
+trigger-child:
+  stage: test
+  trigger:
+    include: dynamic-config.yml
