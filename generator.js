@@ -23,6 +23,11 @@ const testFiles = readDirectory('./tests', '.test.ts'); // 修改为你的测试
 
 const ciConfig = {
     stages: ['test'],
+    cache: {
+        key: "${CI_COMMIT_REF_SLUG}",
+        paths: ["node_modules/"],
+        policy: "pull-push"
+    }
 };
 
 testFiles.forEach((filePath) => {

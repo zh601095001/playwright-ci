@@ -1,66 +1,71 @@
 stages:
   - test
-playwright_test_c63d9558de789e14f58d5973af44f32e:
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+  policy: pull-push
+playwright_test_916c2678038bfe4a6ae1e7b76ff1c78b:
   stage: test
   script:
     - >-
-      npx playwright test tests\test1.test.ts --reporter=json 
-      --output=./reports/report_c63d9558de789e14f58d5973af44f32e.json
+      npx playwright test tests/test1.test.ts --reporter=json 
+      --output=./reports/report_916c2678038bfe4a6ae1e7b76ff1c78b.json
   tags:
     - windows
-playwright_test_b32f1bcad802d6831465351fe22f3091:
+playwright_test_204086cc5f7558cbe79d169ff3d125bb:
   stage: test
   script:
     - >-
-      npx playwright test tests\test2.test.ts --reporter=json 
-      --output=./reports/report_b32f1bcad802d6831465351fe22f3091.json
+      npx playwright test tests/test2.test.ts --reporter=json 
+      --output=./reports/report_204086cc5f7558cbe79d169ff3d125bb.json
   tags:
     - windows
-playwright_test_4c86c7d6f53f71852ad211a10254f72c:
+playwright_test_a94b719729c1272b8cd991c8e327e9a9:
   stage: test
   script:
     - >-
-      npx playwright test tests\test3.test.ts --reporter=json 
-      --output=./reports/report_4c86c7d6f53f71852ad211a10254f72c.json
+      npx playwright test tests/test3.test.ts --reporter=json 
+      --output=./reports/report_a94b719729c1272b8cd991c8e327e9a9.json
   tags:
     - windows
-playwright_test_99fd042a65c74ec8be89c092378091d6:
+playwright_test_99fb4c670da99217cd9281419d0e1579:
   stage: test
   script:
     - >-
-      npx playwright test tests\test4.test.ts --reporter=json 
-      --output=./reports/report_99fd042a65c74ec8be89c092378091d6.json
+      npx playwright test tests/test4.test.ts --reporter=json 
+      --output=./reports/report_99fb4c670da99217cd9281419d0e1579.json
   tags:
     - windows
-playwright_test_b2ee2d2562688951a3687dc42c390c7f:
+playwright_test_93b829049fdb342f38059935e64fc1fb:
   stage: test
   script:
     - >-
-      npx playwright test tests\test5.test.ts --reporter=json 
-      --output=./reports/report_b2ee2d2562688951a3687dc42c390c7f.json
+      npx playwright test tests/test5.test.ts --reporter=json 
+      --output=./reports/report_93b829049fdb342f38059935e64fc1fb.json
   tags:
     - windows
-playwright_test_abf111439536315ec8b7faac535f229e:
+playwright_test_e6733ac23df56d216b18a8271eccf45f:
   stage: test
   script:
     - >-
-      npx playwright test tests\test6.test.ts --reporter=json 
-      --output=./reports/report_abf111439536315ec8b7faac535f229e.json
+      npx playwright test tests/test6.test.ts --reporter=json 
+      --output=./reports/report_e6733ac23df56d216b18a8271eccf45f.json
   tags:
     - windows
-playwright_test_a1e6bd6aba5c1c6f23c6b4c962af182c:
+playwright_test_ab666dd0e96dc09ab1d2447109b8e1b0:
   stage: test
   script:
     - >-
-      npx playwright test tests\test7.test.ts --reporter=json 
-      --output=./reports/report_a1e6bd6aba5c1c6f23c6b4c962af182c.json
+      npx playwright test tests/test7.test.ts --reporter=json 
+      --output=./reports/report_ab666dd0e96dc09ab1d2447109b8e1b0.json
   tags:
     - windows
-playwright_test_f028b943622feeda53f2c4de8953e699:
+playwright_test_1b68b1752dcd8d5f6a170cb94b876ca4:
   stage: test
   script:
     - >-
-      npx playwright test tests\test8.test.ts --reporter=json 
-      --output=./reports/report_f028b943622feeda53f2c4de8953e699.json
+      npx playwright test tests/test8.test.ts --reporter=json 
+      --output=./reports/report_1b68b1752dcd8d5f6a170cb94b876ca4.json
   tags:
     - windows
