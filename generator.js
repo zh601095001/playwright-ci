@@ -25,7 +25,7 @@ const ciConfig = {
     stages: ["install", 'test'],
     cache: {
         key: "${CI_COMMIT_REF_SLUG}",
-        paths: ["node_modules/", "browsers/"],
+        paths: ["node_modules/", "browsers/","./test-result"],
         policy: "pull-push"
     },
     variables: {
@@ -43,7 +43,13 @@ testFiles.forEach((filePath) => {
     const reportPath = `./reports/report_${uniqueToken}.json`;  // 定义 JSON 报告文件的路径
     ciConfig[`playwright_test_${uniqueToken}`] = {
         stage: 'test',
-        script: [`npx playwright test ${filePath} --output=${reportPath}`],
+        script: [
+            `npx playwright test ${filePath} --output=${reportPath}`,
+            `$uri = 'http://example.com/api/endpoint'`,
+            `$body = Get-Content -Path '${reportPath}' -Raw`,
+            `$response = Invoke-WebRequest -Uri $uri -Method Post -Body $body -ContentType 'application/json'`,
+            `Write-Output "Response: $($response.Content)"`,
+        ],
         tags: ['windows'] // 修改为你的 GitLab Runner 标签
     };
 });

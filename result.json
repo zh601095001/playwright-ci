@@ -1,0 +1,301 @@
+[
+  {
+    "suite_title": "test1.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should allow me to add todo items",
+            "suite_spec_ok": false,
+            "tests": [
+              [
+                {
+                  "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"buy some cheese\",\u001b[22m\n\u001b[32m-   \"buy some cheese\",\u001b[39m\n\u001b[31m+   \"feed the cat\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\n    at C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts:28:54",
+                  "startTime": "2024-05-19T14:11:57.423Z",
+                  "location": {
+                    "file": "C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts",
+                    "column": 54,
+                    "line": 28
+                  },
+                  "attachments": [
+                    {
+                      "uid": "bcf2ea68ba8b2c21ae03-8384f289b62dfbd55ef9-0-test-failed-1-png",
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ZH\\Desktop\\playwright\\test-results\\test1-New-Todo-should-allow-me-to-add-todo-items-chromium\\test-failed-1.png"
+                    }
+                  ]
+                },
+                {
+                  "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"buy some cheese\",\u001b[22m\n\u001b[32m-   \"buy some cheese\",\u001b[39m\n\u001b[31m+   \"feed the cat\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\n    at C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts:28:54",
+                  "startTime": "2024-05-19T14:12:09.156Z",
+                  "location": {
+                    "file": "C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts",
+                    "column": 54,
+                    "line": 28
+                  },
+                  "attachments": [
+                    {
+                      "uid": "bcf2ea68ba8b2c21ae03-8384f289b62dfbd55ef9-4-test-failed-1-png",
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ZH\\Desktop\\playwright\\test-results\\test1-New-Todo-should-allow-me-to-add-todo-items-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "uid": "bcf2ea68ba8b2c21ae03-8384f289b62dfbd55ef9-4-video-webm",
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ZH\\Desktop\\playwright\\test-results\\test1-New-Todo-should-allow-me-to-add-todo-items-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "uid": "bcf2ea68ba8b2c21ae03-8384f289b62dfbd55ef9-4-trace-zip",
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\ZH\\Desktop\\playwright\\test-results\\test1-New-Todo-should-allow-me-to-add-todo-items-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"buy some cheese\",\u001b[22m\n\u001b[32m-   \"buy some cheese\",\u001b[39m\n\u001b[31m+   \"feed the cat\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\n    at C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts:28:54",
+                  "startTime": "2024-05-19T14:12:18.157Z",
+                  "location": {
+                    "file": "C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts",
+                    "column": 54,
+                    "line": 28
+                  },
+                  "attachments": [
+                    {
+                      "uid": "bcf2ea68ba8b2c21ae03-8384f289b62dfbd55ef9-5-test-failed-1-png",
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ZH\\Desktop\\playwright\\test-results\\test1-New-Todo-should-allow-me-to-add-todo-items-chromium-retry2\\test-failed-1.png"
+                    }
+                  ]
+                },
+                {
+                  "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"buy some cheese\",\u001b[22m\n\u001b[32m-   \"buy some cheese\",\u001b[39m\n\u001b[31m+   \"feed the cat\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\u001b[2m  -   locator resolved to 2 elements\u001b[22m\n\n    at C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts:28:54",
+                  "startTime": "2024-05-19T14:12:26.769Z",
+                  "location": {
+                    "file": "C:\\Users\\ZH\\Desktop\\playwright\\tests\\test1.test.ts",
+                    "column": 54,
+                    "line": 28
+                  },
+                  "attachments": [
+                    {
+                      "uid": "bcf2ea68ba8b2c21ae03-8384f289b62dfbd55ef9-6-test-failed-1-png",
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ZH\\Desktop\\playwright\\test-results\\test1-New-Todo-should-allow-me-to-add-todo-items-chromium-retry3\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "suite_spec_title": "should clear text input field when an item is added",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should append new items to the bottom of the list",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "New Todo",
+        "inner_suite_file": "test1.test.ts"
+      }
+    ],
+    "suite_file": "test1.test.ts"
+  },
+  {
+    "suite_title": "test2.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should allow me to mark all items as completed",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should allow me to clear the complete state of all items",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "complete all checkbox should update state when items are completed / cleared",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Mark all as completed",
+        "inner_suite_file": "test2.test.ts"
+      }
+    ],
+    "suite_file": "test2.test.ts"
+  },
+  {
+    "suite_title": "test3.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should allow me to mark items as complete",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should allow me to un-mark items as complete",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should allow me to edit an item",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Item",
+        "inner_suite_file": "test3.test.ts"
+      }
+    ],
+    "suite_file": "test3.test.ts"
+  },
+  {
+    "suite_title": "test4.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should hide other controls when editing",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should save edits on blur",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should trim entered text",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should remove the item if an empty text string was entered",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should cancel edits on escape",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Editing",
+        "inner_suite_file": "test4.test.ts"
+      }
+    ],
+    "suite_file": "test4.test.ts"
+  },
+  {
+    "suite_title": "test5.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should display the current number of todo items",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Counter",
+        "inner_suite_file": "test5.test.ts"
+      }
+    ],
+    "suite_file": "test5.test.ts"
+  },
+  {
+    "suite_title": "test6.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should display the correct text",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should remove completed items when clicked",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should be hidden when there are no items that are completed",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Clear completed button",
+        "inner_suite_file": "test6.test.ts"
+      }
+    ],
+    "suite_file": "test6.test.ts"
+  },
+  {
+    "suite_title": "test7.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should persist its data",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Persistence",
+        "inner_suite_file": "test7.test.ts"
+      }
+    ],
+    "suite_file": "test7.test.ts"
+  },
+  {
+    "suite_title": "test8.test.ts",
+    "inner_suites": [
+      {
+        "suite_specs": [
+          {
+            "suite_spec_title": "should allow me to display active items",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should respect the back button",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should allow me to display completed items",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should allow me to display all items",
+            "suite_spec_ok": true,
+            "tests": []
+          },
+          {
+            "suite_spec_title": "should highlight the currently applied filter",
+            "suite_spec_ok": true,
+            "tests": []
+          }
+        ],
+        "inner_suite_title": "Routing",
+        "inner_suite_file": "test8.test.ts"
+      }
+    ],
+    "suite_file": "test8.test.ts"
+  }
+]

@@ -15,67 +15,131 @@ install-browser:
     - npx playwright install
   tags:
     - windows
-playwright_test_5e465037bca1e2f11ad6ddc1730b1cbd:
+playwright_test_9127954acb8493fbd5767d1011b1b35c:
   stage: test
   script:
     - >-
       npx playwright test tests/test1.test.ts
-      --output=./reports/report_5e465037bca1e2f11ad6ddc1730b1cbd.json
+      --output=./reports/report_9127954acb8493fbd5767d1011b1b35c.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_9127954acb8493fbd5767d1011b1b35c.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_87ccb6ac49e07d5526f904514531f486:
+playwright_test_cab234f43f84e91ea1840bf585c09cfc:
   stage: test
   script:
     - >-
       npx playwright test tests/test2.test.ts
-      --output=./reports/report_87ccb6ac49e07d5526f904514531f486.json
+      --output=./reports/report_cab234f43f84e91ea1840bf585c09cfc.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_cab234f43f84e91ea1840bf585c09cfc.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_ffc2792b98c3363a297fe2d90fca04c7:
+playwright_test_669a9160eec01bb60afac6743266fcad:
   stage: test
   script:
     - >-
       npx playwright test tests/test3.test.ts
-      --output=./reports/report_ffc2792b98c3363a297fe2d90fca04c7.json
+      --output=./reports/report_669a9160eec01bb60afac6743266fcad.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_669a9160eec01bb60afac6743266fcad.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_2c324808d46b34ef45ffe96dd0126f82:
+playwright_test_8830453793d1cacfcab395b37f09adc0:
   stage: test
   script:
     - >-
       npx playwright test tests/test4.test.ts
-      --output=./reports/report_2c324808d46b34ef45ffe96dd0126f82.json
+      --output=./reports/report_8830453793d1cacfcab395b37f09adc0.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_8830453793d1cacfcab395b37f09adc0.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_da0566a24ff0cbebccd677f4baeca5da:
+playwright_test_32ef814190300213d41e158af88b4077:
   stage: test
   script:
     - >-
       npx playwright test tests/test5.test.ts
-      --output=./reports/report_da0566a24ff0cbebccd677f4baeca5da.json
+      --output=./reports/report_32ef814190300213d41e158af88b4077.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_32ef814190300213d41e158af88b4077.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_c95876143e123a333ba93099664d4696:
+playwright_test_6e2fd23297d7dbaa7d6c029d387761b2:
   stage: test
   script:
     - >-
       npx playwright test tests/test6.test.ts
-      --output=./reports/report_c95876143e123a333ba93099664d4696.json
+      --output=./reports/report_6e2fd23297d7dbaa7d6c029d387761b2.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_6e2fd23297d7dbaa7d6c029d387761b2.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_2c67e638ef4801986eff2758b36d6448:
+playwright_test_f75a5404e5ee4e00825a1778c2d0f0ab:
   stage: test
   script:
     - >-
       npx playwright test tests/test7.test.ts
-      --output=./reports/report_2c67e638ef4801986eff2758b36d6448.json
+      --output=./reports/report_f75a5404e5ee4e00825a1778c2d0f0ab.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_f75a5404e5ee4e00825a1778c2d0f0ab.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
-playwright_test_707c45bf8d2d89b99fe5d10d85ff177b:
+playwright_test_de792cab9bdf6082cfc4f605144a7e95:
   stage: test
   script:
     - >-
       npx playwright test tests/test8.test.ts
-      --output=./reports/report_707c45bf8d2d89b99fe5d10d85ff177b.json
+      --output=./reports/report_de792cab9bdf6082cfc4f605144a7e95.json
+    - $uri = 'http://example.com/api/endpoint'
+    - >-
+      $body = Get-Content -Path
+      './reports/report_de792cab9bdf6082cfc4f605144a7e95.json' -Raw
+    - >-
+      $response = Invoke-WebRequest -Uri $uri -Method Post -Body $body
+      -ContentType 'application/json'
+    - 'Write-Output "Response: $($response.Content)"'
   tags:
     - windows
