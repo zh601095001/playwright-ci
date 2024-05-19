@@ -1,7 +1,7 @@
 stages:
   - build
   - generate
-  - test
+  - sub-job
 variables:
   PLAYWRIGHT_BROWSERS_PATH: $CI_PROJECT_DIR/browsers
 
@@ -30,7 +30,7 @@ generate-config:
     - windows
 
 trigger-child:
-  stage: test
+  stage: sub-job
   trigger:
     include: dynamic-config.yml
 

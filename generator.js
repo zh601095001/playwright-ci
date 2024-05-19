@@ -22,15 +22,21 @@ function readDirectory(directory, extension) {
 const testFiles = readDirectory('./tests', '.test.ts'); // 修改为你的测试文件目录
 
 const ciConfig = {
-    stages: ['test'],
+    stages: ["install", 'test'],
     cache: {
         key: "${CI_COMMIT_REF_SLUG}",
-        paths: ["node_modules/","browsers/"],
+        paths: ["node_modules/", "browsers/"],
         policy: "pull-push"
     },
-    variables:{
+    variables: {
         PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/browsers"
+    },
+    "build-dependencies": {
+        stage: "install",
+        script: ["npx playwright install"]
     }
+
+
 };
 
 testFiles.forEach((filePath) => {
@@ -38,7 +44,7 @@ testFiles.forEach((filePath) => {
     const reportPath = `./reports/report_${uniqueToken}.json`;  // 定义 JSON 报告文件的路径
     ciConfig[`playwright_test_${uniqueToken}`] = {
         stage: 'test',
-        script: [`pwd;npx playwright test ${filePath} --reporter=json  --output=${reportPath}`],
+        script: [`npx playwright test ${filePath} --reporter=json  --output=${reportPath}`],
         tags: ['windows'] // 修改为你的 GitLab Runner 标签
     };
 });
