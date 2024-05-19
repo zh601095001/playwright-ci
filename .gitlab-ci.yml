@@ -15,7 +15,7 @@ build-dependencies:
 generate-config:
   stage: generate
   script:
-    - node generator.js
+    - npm run generator
   artifacts:
     paths:
       - dynamic-config.yml
